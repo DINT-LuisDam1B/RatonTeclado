@@ -64,5 +64,38 @@ namespace RatonTeclado
         {
             TextBoxClickDerecho.Background = Brushes.White;
         }
+
+        private void PrecionarTecladoEvent(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.A:
+                    e.Handled = true;
+                    break;
+                case Key.E:
+                    e.Handled = true;
+                    break;
+                case Key.I:
+                    e.Handled = true;
+                    break;
+                case Key.O:
+                    e.Handled = true;
+                    break;
+                case Key.U:
+                    e.Handled = true;
+                    break;
+                default:
+                    e.Handled = false;
+                    break;
+            }
+        }
+
+        private void TextBox_2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F1)
+            {
+                TextBox_2.Text = "Ayuda";
+            }
+        }
     }
 }

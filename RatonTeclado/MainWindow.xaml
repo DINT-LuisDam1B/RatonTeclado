@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RatonTeclado"
         mc:Ignorable="d"
-        Title="Ratón y Teclado" Height="450" Width="800" Icon="mouseclick_rato_4313.ico">
-    <Grid MouseRightButtonDown="ClickDerechoDown" PreviewMouseLeftButtonDown="PreviewClickIzquierdoDown" PreviewMouseLeftButtonUp="PreviewClickIzquierdoUp" PreviewMouseRightButtonDown="PreviewClickDerechoDown" PreviewMouseRightButtonUp="PreviewClickDerechoUp">
+        Title="Ratón y Teclado" Height="450" Width="800" Icon="mouseclick_rato_4313.ico"
+        MouseRightButtonDown="ClickDerechoDown" PreviewMouseLeftButtonDown="PreviewClickIzquierdoDown" PreviewMouseLeftButtonUp="PreviewClickIzquierdoUp" PreviewMouseRightButtonDown="PreviewClickDerechoDown" PreviewMouseRightButtonUp="PreviewClickDerechoUp">
+    <Grid >
         <TextBlock HorizontalAlignment="Left" Margin="102,96,0,0" TextWrapping="Wrap" Text="Text Box 1" VerticalAlignment="Top"/>
         <TextBox x:Name="TextBox_1" HorizontalAlignment="Left" Height="23" Margin="102,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="MouseSobre" MouseLeave="MouseFuera" GotFocus="FocoSobre" CharacterCasing="Upper"/>
         <TextBlock HorizontalAlignment="Left" Margin="102,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Tex"/><Run Text="t Box 2"/></TextBlock>
-        <TextBox x:Name="TextBox_2" HorizontalAlignment="Left" Height="23" Margin="101,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="MouseSobre" MouseLeave="MouseFuera" GotFocus="FocoSobre"/>
+        <TextBox x:Name="TextBox_2" HorizontalAlignment="Left" Height="23" Margin="101,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="MouseSobre" MouseLeave="MouseFuera" GotFocus="FocoSobre" KeyDown="TextBox_2_KeyDown"/>
         <TextBlock HorizontalAlignment="Left" Margin="101,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Text"/><Run Text=" Box 3"/></TextBlock>
-        <TextBox x:Name="TextBox_3" HorizontalAlignment="Left" Height="23" Margin="101,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="MouseSobre" MouseLeave="MouseFuera" GotFocus="FocoSobre"/>
+        <TextBox x:Name="TextBox_3" HorizontalAlignment="Left" Height="23" Margin="101,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MouseEnter="MouseSobre" MouseLeave="MouseFuera" GotFocus="FocoSobre" KeyDown="PrecionarTecladoEvent"/>
         <TextBlock HorizontalAlignment="Left" Margin="475,96,0,0" TextWrapping="Wrap" Text="Foco" VerticalAlignment="Top"/>
         <TextBox x:Name="TextBox_Foco" HorizontalAlignment="Left" Height="23" Margin="475,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="475,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"><Run Text="Ratón Sob"/><Run Text="re"/></TextBlock>
